@@ -13,8 +13,10 @@ const useSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-    }
-},{timestamps: true})
+    },
+},
+    {timestamps: true}
+);
 
 const User = mongoose.model('User', useSchema);
 
